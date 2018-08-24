@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.SelectVehicleType">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <include layout="@layout/custom_actionbar" />
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_type_msg"
+            android:textSize="16dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardRegularcab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="52dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Regular Cab"
+                    android:id="@+id/txtCabType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imageIconRight"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:background="@drawable/checked"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imIconUnselect"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/gray"
+                    android:background="@drawable/checked"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            android:layout_gravity="center_vertical"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:backgroundTint="@color/gray"
+                    android:id="@+id/miniCabIcon"
+                    android:layout_width="52dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/city_mini"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Citycab Mini"
+                    android:id="@+id/txtMiniCab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray" />
+                <View
+                    android:layout_weight="1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+                <ImageView
+                    android:id="@+id/moiniCabRight"
+                    android:layout_width="82dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/coming"/>
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            android:layout_gravity="center_vertical"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:backgroundTint="@color/gray"
+                    android:id="@+id/imageCityCabIcon"
+                    android:layout_width="52dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_sedan"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Citycab Sedan"
+                    android:id="@+id/txtCityCab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray" />
+
+                <View
+                    android:layout_weight="1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+                <ImageView
+                    android:id="@+id/imageCityCabRight"
+                    android:layout_width="82dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/coming"/>
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btSubmit"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pbHeaderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2" >
+    </ProgressBar>
+
+</FrameLayout>

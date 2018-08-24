@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ezy Ride Driver</string>
+    <string name="welcome">Welcome to EzyRide</string>
+    <string name="welcom_msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique.</string>
+    <string name="forgot_psw_msg">don\'t worry! Just enter your phone number below and we\'ll send temporary password to login.</string>
+    <string name="otp_msg">We are unable to auto-verify your mobile number. Please enter the code tested to +1 91234 56979</string>
+    <string name="vehicle_type_msg">PLEASE CHOOSE HOW YOU WOULD LIKE TO PARTNER WITH EZYRIDE.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="default_notification_channel_id">App Notification</string>
+
+</resources>

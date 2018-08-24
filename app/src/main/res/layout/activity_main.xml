@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.activities.MainActivity">
+
+   <LinearLayout
+       android:layout_weight=".7"
+       android:id="@+id/imageLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+<ImageView
+    android:layout_width="fill_parent"
+    android:background="@drawable/taximg"
+    android:layout_height="fill_parent" />
+
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:layout_below="@+id/imageLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_marginTop="25dp"
+           android:gravity="center"
+           android:textSize="18dp"
+           android:textColor="@color/colorPrimary"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/welcome"/>
+
+       <TextView
+           android:layout_margin="15dp"
+           android:gravity="center"
+           android:textSize="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/welcom_msg"/>
+
+
+
+       <LinearLayout
+           android:gravity="bottom"
+           android:orientation="horizontal"
+           android:layout_gravity="bottom"
+      android:layout_width="match_parent"
+           android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/btLogin"
+           android:layout_weight="1"
+           android:padding="15dp"
+           android:gravity="center"
+           android:layout_margin="10dp"
+           android:textColor="@color/black"
+           android:textSize="16dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/normal_round_corner"
+           android:text="LOGIN"/>
+
+
+
+
+       <TextView
+           android:id="@+id/btRegister"
+           android:padding="15dp"
+           android:background="@drawable/normal_round_corner"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:textSize="16dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="REGISTER"/>
+
+
+
+
+   </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

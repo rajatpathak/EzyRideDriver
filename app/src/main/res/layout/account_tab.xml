@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/taximg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="16dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="4dp"
+                    android:src="@drawable/john" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:text="John Doe"
+                        android:textColor="@color/heavy_gray"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:background="@drawable/ic_bill"/>
+                        <TextView
+                            android:layout_marginLeft="16dp"
+                            android:text="Weekly Bill"
+                            android:textSize="16dp"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:layout_height="22dp"
+                            android:background="@drawable/doc"/>
+                        <TextView
+                            android:layout_marginLeft="16dp"
+                            android:text="Documents"
+                            android:textSize="16dp"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:background="@drawable/setting"/>
+                        <TextView
+                            android:textSize="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="Settings"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:layout_height="22dp"
+                            android:background="@drawable/ic_action_info"/>
+                        <TextView
+                            android:textSize="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="About"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:background="@drawable/ic_action_help"
+                           />
+                        <TextView
+                            android:textSize="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="Help"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:backgroundTint="@color/dark_gray"
+                            android:background="@drawable/ic_logout"/>
+                        <TextView
+                            android:textSize="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="Logout"
+                            android:textColor="#555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

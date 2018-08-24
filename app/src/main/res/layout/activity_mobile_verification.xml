@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.activities.MobileVerification">
+    <include
+        layout="@layout/custom_actionbar"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/mobile"/>
+
+        <TextView
+            android:padding="4dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textColor="@color/heavy_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_msg"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_below="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvOtp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER OTP"/>
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etOtp"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="1234"/>
+            <TextView
+                android:id="@+id/btResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESEND CODE"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/heavy_gray"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_below="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/btSubmit"
+            android:layout_margin="4dp"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+
+</LinearLayout>
